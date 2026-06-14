@@ -1,0 +1,176 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c5d64;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-animation {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(270deg, #1c5d64, #174950, #00d4ff, #1c5d64);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  z-index: 1;
+}
+
+.logo {
+  color: #00d4ff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.profile-icon {
+  font-size: 2rem;
+  color: #00d4ff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+.search-section {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 16px rgba(0, 212, 255, 0.4);
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-button {
+  background-color: transparent;
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #00d4ff;
+  color: #1c5d64;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-icon {
+  font-size: 1.8rem;
+  color: #00d4ff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.admin-icon:hover {
+  transform: scale(1.1);
+}
+.search-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-button-icon {
+  background-color: #00d4ff;
+  color: #1c5d64;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+}
+
+.search-button-icon:hover {
+  background-color: #00b0d0;
+  transform: scale(1.1);
+}
+
+
+.card-container {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.flash-card {
+  padding: 1.2rem;
+  background-color: #f0f0f0;
+  color: #1c5d64;
+  width: 160px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.flash-card:hover {
+  transform: scale(1.05);
+}
+
+.song-card {
+  border-radius: 20px; /* mai rotund pentru melodie */
+}
+
+.artist-card {
+  border-radius: 6px;  /* mai pătrățos pentru artist */
+}
+.flash-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
